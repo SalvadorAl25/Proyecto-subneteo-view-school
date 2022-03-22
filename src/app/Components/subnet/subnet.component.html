@@ -1,0 +1,111 @@
+<br>
+<br>
+<h3>Subneteo [Subnetting]</h3>
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-2">
+            <label for="inputip">Direccion IP*</label>
+            <input type="text" class="form-control" id="inputip" #inputip placeholder={{demoip}}>
+        </div>
+        <div class="form-group col-md-1">
+            <label for="inputpre">Prefijo</label>
+            <input type="number" class="form-control" id="inputpre" #inputpre placeholder="{{demopre}}">
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputMask">Mascara de Subred</label>
+            <input type="text" class="form-control" id="inputMask" #inputMask placeholder="{{demoMask}}">
+        </div>
+        <div class="form-group col-md-1">
+            <label>Clase</label>
+            <output class="form-control">{{clase}}</output>
+        </div>
+        <div class="form-group col-md-1">
+            <label for="inputsub">Subredes*</label>
+            <input type="number" min=1 class="form-control" id="inputsub" #inputsub>
+        </div>
+        <button type="button" class="btn btn-primary" (click)="probar(inputip.value)">Probar</button>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="Subnetting(inputpre.value, inputip.value, inputMask.value, inputsub.value)">Calcular</button>
+</form>
+<br>
+<hr>
+<form>
+    <div class="form-row justify-content-end">
+        <div class="form-group col-md-3">
+            <label>Nueva Mascara de Subred</label>
+            <output class="form-control">{{NMask}}</output>
+        </div>
+        <div class="form-group col-md-2">
+            <label>Nuevo Prefijo</label>
+            <output class="form-control">{{Npre}}</output>
+        </div>
+    </div>
+</form>
+<!--<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Id de Red</th>
+            <th scope="col">1ra Ip Usable</th>
+            <th scope="col">ultima Ip Usable</th>
+            <th scope="col">Broadcast</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">{{ipdr.idred}}</th>
+            <td>{{ipdr.red1}}</td>
+            <td>{{ipdr.red2}}</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>-->
+<div class="row">
+    <table class="table table-bordered col-3">
+        <thead>
+            <tr>
+                <th scope="col">Id de Red</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let ipdr of idr">
+                <th scope="row">{{ipdr}}</th>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered col-3">
+        <thead>
+            <tr>
+                <th scope="col">1ra ip Usable</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let r1 of ran1">
+                <th scope="row">{{r1}}</th>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered col-3">
+        <thead>
+            <tr>
+                <th scope="col">Ultima ip usable</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let r2 of ran2">
+                <th scope="row">{{r2}}</th>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered col-3">
+        <thead>
+            <tr>
+                <th scope="col">Broadcast</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let broadcast of broad">
+                <th scope="row">{{broadcast}}</th>
+            </tr>
+        </tbody>
+    </table>
+</div>

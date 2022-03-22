@@ -1,0 +1,339 @@
+<br>
+<br>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Unidad I</h1>
+        <p class="lead">Aspectos Basicos De Redes</p>
+    </div>
+</div>
+<img src="../../../assets/img/2014-04-24-dia-mundial-da-internet-segura_g.jpg" class="rounded mx-auto d-block" alt="...">
+<br>
+<hr>
+<blockquote class="blockquote text-center">
+    <p class="mb-0">Que es una red y su Objetivo </p>
+    <footer class="blockquote-footer">Una red la constituyen dos o más ordenadores que comparten determinados recursos, sea hardware (impresoras, sistemas de almacenamiento, ... ) sea software ( aplicaciones, archivos, datos... ). Su objetivo principal es lograr que todos sus programas,
+        datos y equipo estén disponibles para cualquiera de la red que lo solicite, sin importar la localización física del recurso y del usuario.
+    </footer>
+</blockquote>
+<hr>
+<br>
+<h4>Objetivos</h4>
+<div class="row">
+    <div class="col-7 mt-4">
+        <div class="card-body">
+            <p class="lead">Consiste en proporcionar una alta fiabilidad, al contar con fuentes alternativas de suministro, es decir que todos los archivos podrían duplicarse en dos o tres máquinas.
+            </p>
+            <br>
+            <p>Igualmente la presencia de varios CPU significa que si una de ellas deja de funcionar, las otras pueden ser capaces de encargarse de su trabajo, aunque su rendimiento en general sea menor. Considerando la topologia que tenga la red.</p>
+            <br>
+            <p>El ahorro económico</p>
+            <br>
+            <p>Proporciona un poderoso medio de comunicación entre personas que se encuentran en lugares distantes entre sí.</p>
+        </div>
+    </div>
+    <div class="mt-4" style="width: 25rem;">
+        <img class="card-img-top rounded float-right" src="../../../assets/img/1.png" alt="Card image cap">
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<h4>Historia</h4>
+<div class="row">
+    <div class="mt-4" style="width: 25rem;">
+        <img class="card-img-top rounded float-right" src="../../../assets/img/redes.png" alt="Card image cap">
+    </div>
+    <div class="col-7 mt-4">
+        <div>
+            <div>
+                <div class="card-body">
+                    <p>La historia de las redes abarca la última mitad del siglo pasado. Las Pcs han evolucionado de ser novedades costosas hasta convertirse en herramientas fundamentales para los negocios. Utilizan sistemas basados en microcomputadoras,
+                        una tendencia llamada de reducción y ajuste.
+                    </p>
+                    <br>
+                    <p>La primera computadora electrónica (electromecánica ) fue la ENIAC, considerada como uno de los inventos más importantes realizados durante la segunda guerra mundial. Esta computadora tenía un tiempo promedio entre errores de 30s.
+                        La ENIAC era utilizada principalmente por el ejercito estadounidense, para producir tablas de cálculos de artillería.
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<h4>Conceptos Basicos De Redes</h4>
+<br>
+<div class="row">
+    <div class="pr-2 pb-2">
+        <button type="button" class="btn btn btn-outline-primary btn-lg btn-block" (click)="Collapsed1 = !Collapsed1" [attr.aria-expanded]="!Collapsed1" aria-controls="collapseExample">¿Que es una red?</button>
+    </div>
+    <div class="pr-2 pb-2 justify-content">
+        <button type="button" class="btn btn-outline-secondary btn-lg btn-block" (click)="Collapsed2 = !Collapsed2" [attr.aria-expanded]="!Collapsed2" aria-controls="collapseExample">Surgimiento</button>
+    </div>
+    <div class="pr-2 pb-2 justify-content">
+        <button type="button" class="btn btn btn-outline-success btn-lg btn-block" (click)="Collapsed3 = !Collapsed3" [attr.aria-expanded]="!Collapsed3" aria-controls="collapseExample">Conmutadores</button>
+    </div>
+
+    <div>
+        <div id="collapseExample" [ngbCollapse]="Collapsed1" class="pb-3">
+            <div class="card bg-primary text-white">
+                <div class="card-body">
+                    <div class="card-header">¿Que es una red?</div>
+                    <p>Es un conjunto de computadoras conectadas entre sí por medios  físicos (a través de cables u otro medio de comunicación como por ejemplo vía microondas), permitiendo así el intercambio de datos (archivos e información) y compartir
+                        recursos (impresoras, lectoras de discos compactos, escáner, etc.) del sistema.</p>
+                    <br>
+                    <p>Cabe aclarar que no es necesario que todas las computadoras estén funcionando para que exista una red, pero es recomendable que lo estén para sacar su máximo provecho.</p>
+                    <br>
+                    <p>Esto llevo a que se fueron agregando con el tiempo características que permitían la colaboración entre computadoras (o estaciones de trabajo) de arquitectura muy heterogénea ( PCs IBM compatible, Apple Macintosh y terminales UNIX).
+                        Hoy en día esa idea original a permanecido y ha sido potenciada por las nuevas tecnologías.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="collapseExample" [ngbCollapse]="Collapsed2" class="pb-3">
+            <div class="card text-white bg-secondary">
+                <div class="card-body">
+                    <div class="card-header">Surgimiento de las computadoras personales</div>
+                    <p>A mediados de los años sesenta apareció una nueva tecnología: el microprocesador. Constaba de muchos transistores conectados para dar como resultado un instrumento de computación, que cabía en un chip de silicio.
+                    </p>
+                    <br>
+                    <p><strong>Sistema Operativo: </strong>un programa que administra y controla el acceso de otros programas a los recursos de la computadora.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="collapseExample" [ngbCollapse]="Collapsed3" class="pb-3">
+            <div class="card text-white bg-success">
+                <div class="card-body">
+                    <div class="card-header">Conmutadores de datos</div>
+                    <ul>
+                        <li>
+                            Un conmutador de datos, es un aparato que permitía el acceso a impresoras, un usuario a la vez.
+                        </li>
+                        <br>
+                        <li>
+                            El conmutador de datos proporcionaba a los usuarios una conexión de puerto serial o en paralelo, y quien enviara primero los datos ganaba el acceso a la impresora. Para entregar el control, una PC tenía que mandar una secuencia de caracteres especifica
+                            para decir que había terminado.
+                        </li>
+                        <br>
+                        <li>
+                            Aunque estos aparatos funcionaban para las impresoras y los plotters, no permitían compartir discos duros . Además requerían una línea especial entre cada PC y el conmutador .
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<br>
+<h4>Clasificaciones de las redes</h4>
+<img src="../../../assets/img/image0044541.png" class="rounded mx-auto d-block" alt="...">
+<br>
+<div class="row">
+    <div class="card bg-light mb-3">
+        <div class="card-header">¿Cómo se clasifican las redes?</div>
+        <div class="card-body">
+            <p class="card-text">Las redes de computadoras se clasifican por su tamaño, es decir la extensión física en que se ubican sus componentes, desde un aula hasta una ciudad, un país o incluso el planeta.
+            </p>
+            <br>
+            <p class="card-text">Dicha clasificación determinará los medios físicos y protocolos requeridos para su operación, por ello se han definido tres tipos:
+            </p>
+        </div>
+    </div>
+</div>
+<br>
+<h3>Tipos de Redes: </h3>
+<div class="row">
+    <div class="pr-2 pb-2">
+        <button type="button" class="btn btn btn-outline-primary btn-lg btn-block" (click)="CollapsedWAN = !CollapsedWAN" [attr.aria-expanded]="!CollapsedWAN" aria-controls="collapseExample">WAN</button>
+    </div>
+    <div class="pr-2 pb-2 justify-content">
+        <button type="button" class="btn btn-outline-secondary btn-lg btn-block" (click)="CollapsedMAN = !CollapsedMAN" [attr.aria-expanded]="!CollapsedMAN" aria-controls="collapseExample">MAN</button>
+    </div>
+    <div class="pr-2 pb-2 justify-content">
+        <button type="button" class="btn btn btn-outline-success btn-lg btn-block" (click)="CollapsedLAN = !CollapsedLAN" [attr.aria-expanded]="!CollapsedLAN" aria-controls="collapseExample">LAN</button>
+    </div>
+</div>
+<div class="row">
+    <div id="collapseExample" [ngbCollapse]="CollapsedWAN" class="pb-3">
+        <div class="card border-primary text-primary">
+            <div class="card-body">
+                <div class="card-header">
+                    <h5>Redes de area amplia o WAN (Wide Area Network)</h5>
+                </div>
+                <br>
+                <p>Esta cubre áreas de trabajo dispersas en un país o varios países o  continentes. Para lograr esto se necesitan distintos tipos de medios: satélites, cables interoceánicos, radio, etc.. Así como la infraestructura telefónica de larga distancias
+                    existen en ciudades y países, tanto de carácter público como privado.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="collapseExample" [ngbCollapse]="CollapsedMAN" class="pb-3">
+        <div class="card border-secondary text-secondary">
+            <div class="card-body">
+                <div class="card-header">
+                    <h5>Redes de Area Metropolitana o MAN (Metropolitan Area Network)</h5>
+                </div>
+                <br>
+                <p>Tiene cubrimiento en ciudades enteras o partes de las mismas. Su uso se encuentra concentrado en entidades de servicios públicos como bancos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="collapseExample" [ngbCollapse]="CollapsedLAN" class="pb-3">
+        <div class="card border-success text-success">
+            <div class="card-body">
+                <div class="card-header">
+                    <h5>Redes de Area Local o LAN (Local Area Network)</h5>
+                </div>
+                <br>
+                <p>Permiten la interconexión desde unas pocas hasta miles de computadoras en la misma área de trabajo como por ejemplo un edificio. Son las redes más pequeñas que abarcan de unos pocos metros a unos pocos kilómetros.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<blockquote class="blockquote text-center">
+    <p class="mb-0">¿Cómo es el funcionamiento de una red de área local?</p>
+    <footer class="blockquote-footer">Este es un conjunto de computadoras ubicadas en un  edificio o lugar cercano, además consta de servidores, estaciones de trabajo, cables y tarjetas de red,  también de programas de computación instalados en los equipos inteligentes.</footer>
+</blockquote>
+<br>
+<div class="row">
+    <div class="mt-5" style="width: 20rem;">
+        <img class="card-img-top rounded float-right" src="../../../assets/img/Imagen1.png" alt="Card image cap">
+    </div>
+    <div class="col-7 mt-3">
+        <div class="card-body">
+            <p>Esta red permite la comunicación de las estaciones de trabajo entre sí y el Servidor (y los recursos asociados a él); para dicho fin se utiliza un sistema operativo de red que se encarga de la administración de los recursos como así también
+                la seguridad y control de acceso al sistema interactuando con el sistema operacional de las estaciones de trabajo. </p>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<div class="card border-dark mb-3 text-dark">
+    <div class="card-header bg-transparent border-dark">Características</div>
+    <div class="card-body">
+        <ul>
+            <li><strong>Topología: </strong>El arreglo geométrico de un sistema de computadoras. Topologías comunes son: bus, estrella, anillo, estrella.
+            </li>
+            <br>
+            <li><strong>Protocolo: </strong>Define un conjunto común de reglas y señales sobre una red que las computadoras usan para comunicarse. Protocolos más comunes son: Ethernet, Token-Ring.</li>
+            <br>
+            <li><strong>Arquitectura: </strong>se refiere a la combinación de HW y SW que definen sus perfiles de funcionamiento. Punto a punto y cliente/servidor.
+            </li>
+        </ul>
+    </div>
+    <div class="card-footer bg-transparent border-darks ">
+        <h5 class="card-title">Otros Terminos Importantes Son: </h5>
+        <ul>
+            <li><strong>Nodos: </strong>cada una de las computadoras en una red.</li>
+            <br>
+            <li><strong>Servidores: </strong>Las computadoras y dispositivos que tienen recursos para una red.</li>
+        </ul>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<h3>Protocolo</h3>
+<div class="row">
+    <div class="col-7">
+        <div class="card border-danger">
+            <div class="card-body">
+                <p>Un conjunto de reglas en cierto formato que se usan para transmitir datos entre dos o más dispositivos. Determina lo siguiente:</p>
+                <ul class="text-danger">
+                    <li>Tipo de chequeo de error a ser usado</li>
+                    <li>Tipo de compresión</li>
+                    <li>Cómo se indicará que se ha terminado de enviar un mensaje por el dispositivo transmisor.</li>
+                    <li>Como el dispositivo receptor indica que el mensaje ha sido recibido.</li>
+                </ul>
+                <br>
+                <p>Existe una gran variedad de estándares, cada uno con sus ventajas y desventajas inherentes, por ejemplo unos son más robustos, otros más rápidos, etc.</p>
+                <br>
+                <p>Desde el punto de vista del usuario el único aspecto importante es saber qué protocolo soporta su equipo para saber si es posible la comunicación con otras partes. </p>
+                <br>
+                <p>El protocolo puede ser implementado ya sea por SW o por HW</p>
+            </div>
+        </div>
+    </div>
+    <div style="width: 25rem;" class="pl-xl-5 pt-xl-4">
+        <img class="card-img-top rounded float-right pt-lg-5" src="../../../assets/img/icono-reglaemnto.png" alt="Card image cap ">
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<h4>Topologias de redes Físicas y Logicas</h4>
+<div class="row">
+    <div class="card-body">
+        <p class="card-text">
+            Es la forma en que el sistema de comunicación está organizado, puede ser desde un punto de vista físico o lógico.
+        </p>
+        <h5 class="card-title">¿Cuáles son las distintas topologías de una red de área local (LAN)?</h5>
+        <p class="card-text">
+            Cuando se ha determinado realizar una red, lo que se debe tener en cuenta es la estructura que va a hacer utilizada, o sea la distribución física de los equipos conectados. Para ello se utilizan las siguientes topologías: BUS, ESTRELLA Y ANILLO.
+        </p>
+    </div>
+</div>
+<br>
+<h4>Topologias</h4>
+<div class="row">
+    <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+        <ngb-panel title="Red Anillo">
+            <ng-template ngbPanelContent>
+                En ésta, las computadoras se conectan en un circuito cerrado formando un anillo por donde circula la información en una sola dirección, con esta característica permite tener un control de recepción de mensajes, pero si el anillo se corta los mensajes
+                se pierden.
+                <img src="../../../assets/img/11231234.png" class="rounded mx-auto d-block" alt="...">
+            </ng-template>
+        </ngb-panel>
+        <ngb-panel title="Red Bus o Canales.">
+            <ng-template ngbPanelContent>
+                Su funcionamiento es similar a la de red anillo, permite conectar las computadoras en red en una sola línea con el fin de poder identificar hacia cual de todas las computadoras se este eligiendo.
+                <img src="../../../assets/img/Imagen1asd.png" class="rounded mx-auto d-block" alt="...">
+            </ng-template>
+        </ngb-panel>
+        <ngb-panel title="Red Estrella.">
+            <ng-template ngbPanelContent>
+                Aquí una computadora hace la función de Servidor y se ubica en el centro de la configuración y todas las otras computadoras o estaciones de trabajo se conectan a él.
+                <img src="../../../assets/img/Imagen123454235.png" class="rounded mx-auto d-block" alt="...">
+            </ng-template>
+        </ngb-panel>
+        <ngb-panel title="Red de árbol.">
+            <ng-template ngbPanelContent>
+                Tiene una arquitectura idéntica a la de BUS, excepto que en esta topología pueden hacerse ramificaciones con múltiples nodos.
+                <img src="../../../assets/img/Imagen164.png" class="rounded mx-auto d-block" alt="...">
+            </ng-template>
+        </ngb-panel>
+        <ngb-panel title="Red de Maya.">
+            <ng-template ngbPanelContent>
+                Los dispositivos están conectados con muchas interconexiones redundantes entre nodos. En una topología de maya real, cada nodo tiene una conexion a cada nodo de la red.
+                <img src="../../../assets/img/Imagen1ikjb.png" class="rounded mx-auto d-block" alt="...">
+            </ng-template>
+        </ngb-panel>
+    </ngb-accordion>
+</div>
+<br>
+<hr>
+<br>
+<h4>Vistas de las Topologias</h4>
+<div class="row justify-content-center">
+    <div class="card mr-3" style="width: 25rem;">
+        <div class="card-header">
+            Topologia Física
+        </div>
+        <img src="../../../assets/img/TopologiaFísica.png" class="card-img-top pl-2 pt-2" style="width: 24rem">
+    </div>
+    <div class="card" style="width: 25rem;">
+        <div class="card-header">
+            Topologia Lógica
+        </div>
+        <img src="../../../assets/img/TopologiaLogica.png" class="card-img-top" style="width: 24rem">
+    </div>
+</div>

@@ -1,0 +1,438 @@
+<br>
+<br>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Unidad II</h1>
+        <p class="lead">Normas y Estándares</p>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<h4>Arquitectura OSI</h4>
+<div class="row">
+    <div class="card col-9 p-0">
+        <div class="card-header"><strong>¿Que es OSI?</strong></div>
+        <div class="card-body">
+            <blockquote class="blockquote">
+                <ul>
+                    <li>Una sigla: Open Systems Interconnection</li>
+                    <li>Conceptualmente: arquitectura general requerida para establecer comunicación entre computadoras</li>
+                </ul>
+                <footer class="blockquote-footer">OSI puede verse de dos formas:
+                    <ul>
+                        <br>
+                        <li><cite title="Source Title">como un estándar</cite></li>
+                        <br>
+                        <li><cite title="Source Title">como un modelo de referencia</cite></li>
+                    </ul>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+    <div class="mt-4" style="width: 17rem;">
+        <img class="card-img-top rounded float-right" src="../../../assets/img/osi-model1.png" alt="Card image cap">
+    </div>
+</div>
+<br>
+<div class="row justify-content-center">
+    <div class="card border-primary col-9 ">
+        <div class="card-body">
+            <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+            <p class="card-text"><strong class="text-primary">El desarrollo inicial de las redes de computadores </strong>fue promovido por redes experimentales como ARPANet y CYCLADES, seguidos por los fabricantes de computadores (SNA, DECnet, etcétera).</p>
+            <p class="card-text"> - Las redes experimentales se diseñaron para ser heterogéneas (no importaba la marca del computador). Las redes de los fabricantes de equipos tenían su propio conjunto de convenciones para interconectar sus equipos y lo llamaban su “arquitectura
+                de red”</p>
+            <ul>
+                <li>La necesidad de interconectar equipos de diferentes fabricantes se hizo evidente.</li>
+                <li>En 1977, la ISO (International Organization for Standarization) reconoció la necesidad de crear estándares para las redes informáticas y creó el subcomité SC16 (Open Systems Interconnection)</li>
+                <li>La primera reunión de éste subcomité se llevo a cabo en marzo de 1978. El modelo de referencia OSI fue desarrollado después de cerca de 18 meses de discusión. </li>
+                <li>El modelo OSI fue adoptado en 1979 por el comité técnico TC97 (procesamiento de datos), del cual dependía el subcomité SC16</li>
+                <li>OSI fue adoptado en 1984 oficialmente como un estándar internacional por la ISO (International Organization of Standards).</li>
+                <li>OSI es un modelo de referencia que muestra como debe transmitirse un mensaje entre nodos en una red de datos</li>
+                <li>El modelo OSI tiene 7 niveles de funciones</li>
+                <li>Sirve para enseñar redes y en discusiones técnicas (resolución de problemas).</li>
+            </ul>
+            <br>
+            <h6 class="card-subtitle mb-2 text-muted">¿En qué se fundamenta OSI?</h6>
+            <ul>
+                <li>La idea principal en el modelo OSI es que el proceso de comunicación entre dos usuarios en una red de telecomunicaciones puede dividirse en niveles (capas)</li>
+                <li>En el proceso de comunicación cada nivel pone su granito de arena: el conjunto de funciones que ese nivel “sabe” hacer. </li>
+            </ul>
+            <h6 class="card-subtitle mb-2 text-muted">¿Cómo opera el modelo OSI?</h6>
+            <p class="card-text">Los usuarios que participan en la comunicación utilizan equipos que tienen “instaladas” las funciones de las 7 capas del modelo OSI (o su equivalente)</p>
+            <p class="card-text"> - En el quipo que envía</p>
+            <ul>
+                <li>El mensaje “baja” a través de las capas del modelo OSI. </li>
+            </ul>
+            <p class="card-text"> - En el quipo que recibe</p>
+            <ul>
+                <li>El mensaje “sube” a través de las capas del modelo OSI</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div>
+        <img src="../../../assets/img/osi-nuevo-14-638.jpg" class="card-img-top " style="width: 27rem">
+    </div>
+    <div>
+        <img src="../../../assets/img/Operación_+2ª+aproximación.jpg" class="card-img-top" style="width: 30rem">
+    </div>
+
+</div>
+<hr>
+<h4>Implementación de las capas OSI</h4>
+<div class="row justify-content-center">
+    <p class="card-text">Las dos primeras capas (física y enlace) generalmente se construyen con hardware y software</p>
+    <p class="card-text"> - El cable, el conector, la tarjeta de red y el driver de la tarjeta pertenecen a los niveles 1 y 2. Los otros cinco niveles se construyen generalmente con software
+    </p>
+    <div>
+        <img src="../../../assets/img/Operación_+3ª+aproximación.jpg" class="card-img-top" style="width: 30rem">
+    </div>
+    <ul><strong>Encapsulación</strong>
+        <li>Cuando un protocolo de una capa superior envía datos a su par en otro nodo, los entrega al protocolo de la capa inferior.</li>
+        <p class="card-text"> - El protocolo de la capa inferior no sabe si el protocolo de nivel superior envía una imagen, un correo o una secuencia numérica.</p>
+        <li>Luego el protocolo del nivel inferior, para crear su mensaje, agrega una información de control (header) que es utilizada entre pares para comunicarse entre ellos.</li>
+        <p class="card-text"> - Esta información de control generalmente es colocada al iniciar el mensaje. En algunos casos se anexa información de control al final del mensaje y la llaman trailer.</p>
+        <li>A los datos entregados por el protocolo de la capa superior, dentro del mensaje, se le llama cuerpo del mensaje o payload.</li>
+        <li>La operación del mensaje del nivel superior detrás de un header o cabecera en el mensaje de nivel inferior se llama encapsulación.</li>
+    </ul>
+    <div>
+        <img src="../../../assets/img/osi-nuevo-25-638.jpg" class="card-img-top" style="width: 30rem">
+    </div>
+    <div>
+        <img src="../../../assets/img/osi-nuevo-26-638.jpg" class="card-img-top" style="width: 30rem">
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div>
+        <img src="../../../assets/img/osi-nuevo-27-638.jpg" class="card-img-top" style="width: 30rem">
+    </div>
+</div>
+<br>
+<hr>
+<ngb-tabset [justify]="currentJustify">
+
+    <ngb-tab title="Aplicación (Capa 7)">
+        <ng-template ngbTabContent>
+            <br>
+            <div class="row center">
+                <div class="card-body">
+                    <h5 class="card-title">7.- Nivel de Aplicación</h5>
+                    <hr>
+                    <p class="card-text"><em>La capa de aplicación está cerca al usuario (no ofrece servicios a otras capas del modelo OSI)</em></p>
+                    <p class="card-text"> - Es el nivel más alto en la arquitectura OSI</p>
+                    <p class="card-text"> - Define la interfaz entre el software de comunicaciones y cualquier aplicación que necesite comunicarse a través de la red.</p>
+                    <p class="card-text"> - Las otras capas existen para prestar servicios a esta capa</p>
+                    <p class="card-text"> - Las aplicaciones están compuestas por procesos.</p>
+                    <p class="card-text"> - Un proceso de aplicación se manifiesta en la capa de aplicaciones como la ejecución de un protocolo de aplicación.</p>
+                </div>
+            </div>
+            <br>
+        </ng-template>
+    </ngb-tab>
+
+    <ngb-tab title="Presentación (capa 6)">
+        <ng-template ngbTabContent>
+            <br>
+            <div class="row center">
+                <div class="card-body">
+                    <h5 class="card-title">6.- Nivel de Presentación</h5>
+                    <hr>
+                    <p><em>Define el formato de los datos que se intercambiarán</em></p>
+                    <p class="card-text"> - Asegura que la información enviada por la capa de aplicación de un nodo sea entendida por la capa de aplicación del otro nodo.</p>
+                    <p class="card-text"> - Si es necesario, transforma a un formato de representación común.</p>
+                    <p class="card-text"> - Negocia la sintáxis de transferencia de datos para la capa de aplicación (estructura de datos).</p>
+                    <p class="card-text"> - Ejemplo: formato GIF, JPEG ó PNG para imágenes.</p>
+                </div>
+            </div>
+            <br>
+        </ng-template>
+    </ngb-tab>
+
+    <ngb-tab title="Sesión (Capa 5)">
+        <ng-template ngbTabContent>
+            <br>
+            <div class="row center">
+                <div class="card-body">
+                    <h5 class="card-title">5.- Nivel de Sesión</h5>
+                    <hr>
+                    <p><em>Define cómo iniciar, coordinar y terminar las conversaciones entre aplicaciones (llamadas sesiones).</em></p>
+                    <p class="card-text"> - Administra el intercambio de datos y sincroniza el diálogo entre niveles de presentación (capa 6) de cada sistema</p>
+                    <p class="card-text"> - Ofrece las herramientas para que la capa de aplicación, la de presentación y la de sesión reporten sus problemas y los recursos disponibles para la comunicación (control del diálogo –sesión- entre aplicaciones)</p>
+                    <p class="card-text"> - Lleva control de qué flujos forman parte de la misma sesión y qué flujos deben terminar correctamente.</p>
+                </div>
+            </div>
+        </ng-template>
+    </ngb-tab>
+
+    <ngb-tab title="Transporte (Capa 4)">
+        <ng-template ngbTabContent>
+            <br>
+            <div class="row center">
+                <div class="card-body">
+                    <h5 class="card-title">4.- Nivel de Transporte</h5>
+                    <hr>
+                    <p><em>Proporciona un número amplio de servicios. Asegura la entrega de los datos entre procesos que han establecido una sesión y que se ejecutan en diferentes nodos</em></p>
+                    <p class="card-text"> - Evita que las capas superiores se preocupen por los detalles del transporte de los datos hasta el proceso correcto</p>
+                    <p class="card-text"> - Hace multiplexamiento para las aplicaciones, ¿cuál es la aplicación/servicio destino/origen?</p>
+                    <p class="card-text"> - Segmenta bloques grandes de datos antes de transmitirlos (y los reensambla en le nodo destino)</p>
+                    <p class="card-text"> - Asegura la transmisión confiable de los mensajes</p>
+                    <p class="card-text"> - No deja que falten ni sobren partes de los mensajes trasmitidos (si es necesario, hace retransmisión de mensajes)</p>
+                </div>
+            </div>
+        </ng-template>
+    </ngb-tab>
+
+    <ngb-tab title="Red (Capa 3)">
+        <ng-template ngbTabContent>
+            <br>
+            <div class="row center">
+                <div class="card-body">
+                    <h5 class="card-title">3.- Nivel de Red</h5>
+                    <hr>
+                    <p><em>Entrega los paquetes de datos a la red correcta, al nodo correcto, buscando el mejor camino (es decir, permite el intercambio de paquetes).</em></p>
+                    <p class="card-text"> - Evita que las capas superiores se preocupen por los detalles de cómo los paquetes alcanzan el nodo destino correcto</p>
+                    <p class="card-text"> - En esta capa se define la dirección lógica de los nodos</p>
+                    <p class="card-text"> - Esta capa es la encargada de hacer el enrutamiento y el direccionamiento</p>
+                    <p class="card-text"> _ Enrutamiento: ¿cuál es el mejor camino para llegar a la red destino?</p>
+                    <p class="card-text"> _ Direccionamiento: ¿cuál es el nodo destino?</p>
+                </div>
+            </div>
+        </ng-template>
+    </ngb-tab>
+
+    <ngb-tab title="Enlace (Capa 2)">
+        <ng-template ngbTabContent>
+            <br>
+            <div class="row center">
+                <div class="card-body">
+                    <h5 class="card-title">2.- Nivel de Enlace</h5>
+                    <hr>
+                    <p><em>Inicia, mantiene y libera los enlaces de datos entre dos nodos.</em></p>
+                    <p><em>Hace transmisión confiable (sin errores) de los datos sobre un medio físico (un enlace)</em></p>
+                    <p class="card-text"> - Define la dirección física de los nodos</p>
+                    <p class="card-text"> - Construye los "frames"</p>
+                    <p class="card-text"> - También debe involucrarse con el orden en que lleguen los frames, notificación de errores físicos, reglas de uso del medio físico y el control del flujo en el medio.</p>
+                    <p class="card-text"> - Es diferente de acuerdo a la topología de red y al medio utilizado</p>
+                </div>
+            </div>
+        </ng-template>
+    </ngb-tab>
+
+    <ngb-tab title="Físico (Capa 1)">
+        <ng-template ngbTabContent>
+            <br>
+            <div class="row center">
+                <div class="card-body">
+                    <h5 class="card-title">1.- Nivel Físico</h5>
+                    <hr>
+                    <p><em>Define las características mecánicas, eléctricas y funcionales para establecer, mantener, repetir, amplificar y desactivar conexiones físicas entre nodos</em></p>
+                    <p class="card-text"> - Acepta un “chorro” de bits y los transporta a través de un medio físico (un enlace)</p>
+                    <p class="card-text"> - Nivel de voltaje, sincronización de cambios de voltaje, frecuencia de transmisión, distancias de los cables, conectores físicos y asuntos similares son especificados en esta capa.</p>
+                </div>
+            </div>
+        </ng-template>
+    </ngb-tab>
+</ngb-tabset>
+<hr>
+<div class="row justify-content-center">
+    <img src="../../../assets/img/slide_37.jpg" class="card-img-top">
+</div>
+<hr>
+<div class="row justify-content-center">
+    <ul><strong>Perspectivas del modelo OSI</strong>
+        <li>El modelo OSI permite trabajar con la complejidad de los sistemas de comunicación de datos</li>
+        <li>Las implementaciones de arquitecturas de red reales no cumplen (o lo hacen parcialmente) con el Modelo OSI:</li>
+        <p class="card-text"> - TCP/IP, SNA, Novell Netware, DECnet, AppleTalk, etc.</p>
+    </ul>
+</div>
+<div class="row justify-content-center">
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">Se intentó construir una implementación del modelo OSI</p>
+            <p><cite title="Source Title"> - A finales de los 80, el gobierno de EEUU quiso establecer GOSIP (Government Open Systems Interconnect Profile) como algo obligatorio. NO funcionó. Perdió vigencia en 1995</cite></p>
+            <p class="card-text">¿Qué sucederá con OSI?</p>
+            <p><cite> - Los protocolos de la implementación OSI desarrollada son demasiado complejos y tienen fallas</cite></p>
+            <p><cite> - Están implementados de manera muy regular</cite></p>
+            <p><cite> - Sin embargo, TCP/IP sigue mejorando continuamente</cite></p>
+            <p><cite>El modelo OSI sigue siendo un modelo pedagógico.</cite></p>
+        </div>
+    </div>
+</div>
+<hr>
+<h4>TCP/IP</h4>
+<div class="row">
+    <div class="card col-5 mr-5 mb-4 bg-light">
+        <div class="card-body">
+            <h6 class="card-title">¿Que es TCP/IP?</h6>
+            <hr>
+            <p class="card-text">El nombre “TCP/IP” se refiere a una suite de protocolos de datos.</p>
+            <p class="card-text"> - Una colección de protocolos de datos que permite que los computadores se comuniquen.</p>
+            <p class="card-text">El nombre viene de dos de los protocolos que lo conforman</p>
+            <p class="card-text"> - Transmission Control Protocol (TCP)</p>
+            <p class="card-text"> - Internet Protocol (IP)</p>
+            <p class="card-text">Hay muchos otros protocolos en la suite</p>
+        </div>
+    </div>
+    <div class="card col-5 p-0 mb-4">
+        <div class="card-body text-white bg-dark">
+            <h6 class="card-title">TCP/IP e Internet</h6>
+            <hr>
+            <p class="card-text">TCP/IP son los protocolos fundamentales de Internet (Aunque se utilizan para Intranets y Extranets).</p>
+            <p class="card-text"> Stanford University presentaó TCP/IP a comienzos de los 70 para una red de conmutación de paquetes (ARPANet)</p>
+            <p class="card-text">La arquitectura de TCP/IP ahora es definida por la Internet Engineering Task Force (IETF)</p>
+        </div>
+    </div>
+    <div class="card col-5 p-0 mr-5">
+        <div class="card-body text-white bg-dark">
+            <h6 class="card-title">¿Por qué es popular TCP/IP</h6>
+            <hr>
+            <p class="card-text">Los estándares de los protocolos son abiertos: interconecta equipos de diferentes fabricantes sin problema.</p>
+            <p class="card-text">Independiente del medio de transmisión físico</p>
+            <p class="card-text">Un esquema de direccionamiento amplio y común</p>
+            <p class="card-text">Protocolos de alto nivel estandarizados (¡muchos servicios!).</p>
+        </div>
+    </div>
+    <div class="card col-5 mb-4 bg-light">
+        <div class="card-body">
+            <h6 class="card-title">“Estándares” de TCP/IP</h6>
+            <hr>
+            <p class="card-text">Para garantizar que TCP/IP sea un protocolo abierto los estándares deben ser públicamente conocidos.</p>
+            <p class="card-text">La mayor parte de la información sobre los protocolos de TCP/IP está publicada en unos documentos llamados Request for Comments (RFC’s) - Hay otros dos tipos de documentos: Military Standards (MIL STD), Internet Engineering Notes (IEN)</p>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row justify-content-center">
+    <div class="card">
+        <div class="card-header">Arquitectura de TCP/IP (cuatro capas)</div>
+        <img src="../../../assets/img/OSI - TCP-IP.png" class="card-img-top">
+    </div>
+</div>
+<br>
+<hr>
+<div class="row">
+    <div class="col-9">
+        <div class="card-body">
+            <h5 class="card-subtitle">Pila de Protocolos de Internet (cinco capas)</h5>
+            <hr>
+            <ul>
+                <li class="card-text"><strong class="text-danger">Aplicación: </strong>soporta las aplicaciones de la red.</li>
+                <p class="card-text"> - FTP,SMTP, HTTP</p>
+                <li class="card-text"><strong class="text-danger">Transporte: </strong>transferencia de datos host to host</li>
+                <p class="card-text"> - TCP, UDP</p>
+                <li class="card-text"><strong class="text-danger">Enlace: </strong>transferencia de datos entre elementos de red vecinos</li>
+                <p class="card-text"> - PPP,Ethernet</p>
+                <li class="card-text"><strong class="text-danger">Física: </strong>bits "en el cable"</li>
+            </ul>
+
+        </div>
+    </div>
+    <div>
+        <img src="../../../assets/img/pila_tcp_ip.png" class="card-img-top">
+    </div>
+</div>
+<br>
+<div class="row">
+    <div style="width: 20rem">
+        <img src="../../../assets/img/logica.JPG" class="card-img-top">
+    </div>
+    <div class="col-8">
+        <div class="card-body">
+            <h5 class="card-subtitle">Capas: Comunicación Lógica</h5>
+            <hr>
+            <ul>
+                <li class="card-text">Las “entidades” implementan las funciones de cada capa en cada nodo.</li>
+                <li class="card-text">las entidades realizan acciones, e intercambian mensajes con sus “iguales"</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-8">
+        <div class="card-body">
+            <h5 class="card-subtitle"><strong class="text-danger">Transporte</strong></h5>
+            <ul>
+                <li class="card-text">Tomar datos de la aplicación.</li>
+                <li class="card-text">agrega direccionamiento, agrega información de chequeo de confiabilidad para formar el “datagrama"</li>
+                <li class="card-text">envía el datagrama al otro nodo</li>
+                <li class="card-text">espera el acuse de recibo (ack) del otro nodo</li>
+                <li class="card-text">analogía: la oficina postal</li>
+            </ul>
+        </div>
+    </div>
+    <div style="width: 20rem">
+        <img src="../../../assets/img/logica2.JPG" class="card-img-top">
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div style="width: 30rem">
+        <img src="../../../assets/img/slide_48.jpg" class="card-img-top">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-8">
+        <div class="card-body">
+            <h5 class="card-subtitle">Encapsulación de datos</h5>
+            <hr>
+            <ul>
+                <li class="card-text">Cada capa de la pila TCP/IP adiciona información de control (un “header”) para asegurar la entrega correcta de los datos.</li>
+                <li class="card-text">Cuando se recibe, la información de control se retira.</li>
+            </ul>
+        </div>
+    </div>
+    <div style="width: 20rem">
+        <img src="../../../assets/img/1287t43897.png" class="card-img-top">
+    </div>
+</div>
+<br>
+<div class="row justify-content-center">
+    <div class="card col-5 p-0 mr-2">
+        <h5 class="card-header">Diferencias</h5>
+        <div class="card-body">
+            <p class="card-text"> - TCP/IP Combina las funciones de la capa de presentación y de sesión en la capa de aplicación</p>
+            <p class="card-text"> - TCP/IP Combina las capas de enlace de datos y la capa física del modelo OSI en una sola capa</p>
+            <p class="card-text"> - TCP/IP parece ser más simple porque tiene menos capas</p>
+            <p class="card-text"> - Los protocolos TCP/IP son los estándares en torno a los cuales se desarrolló la internet, de modo que la credibilidad del modelo TCP/IP se debe en gran parte a sus protocolos. En Comparación, las redes típicas no se desarrollan normalmente
+                a partir del protocolo OSI, Aunque el mnodelo OSI se usa como guía.</p>
+        </div>
+    </div>
+    <div class="card col-5 p-0">
+        <h5 class="card-header">Diferencia entre el modelo OSI y El modelo TCP/IP</h5>
+        <div class="card-body">
+            <p class="card-text"> - Distingue una forma clara los servicios, las interfaces y los protocolos. TCP/IP no lo hace así, no dejando de forma clara esta separación. OSI fue definido antes de implementar los protocolos, por lo que algunas funcionmalidades necesarias
+                fallan o no existen. En cambio, TCP/IP se creó después que los protocolos, por lo que se amolda a ellos perfectamente.</p>
+            <p class="card-text"> - TCP/IP parece ser más simple porque tiene menos capas</p>
+        </div>
+    </div>
+</div>
+<div class="row mt-4">
+    <div class="card">
+        <h5 class="card-header">Diferencias y similitudes del modelo OSI y TCP/IP Similitudes</h5>
+        <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Similitudes</h6>
+            <ul>
+                <li class="card-text">Ambos tienen capas de transporte y de red similares.</li>
+                <li class="card-text">Tienen un mismo objetivo en comun.</li>
+                <li class="card-text">Ambos tienen capas de aplicacion.</li>
+                <li class="card-text">Ambos se dividen en capas.</li>
+                <li class="card-text">Ambos son modelos de comunicacion</li>
+                <li class="card-text">TCP/IP esta influenciado por el modelo OSI.</li>
+            </ul>
+            <br>
+            <h6 class="card-subtitle mb-2 text-muted">Diferencias</h6>
+            <ul>
+                <li class="card-text">OSI distingue de forma clara los servicios, interfaces y los protoocolos TCP/IP no lo hace así, dejando de forma clara esta separacion.</li>
+                <li class="card-text">TCP/IP parece ser mas simple por que tiene menos capas.</li>
+                <li class="card-text">TCP/IP fue diseñado como la solucion a un problema practicode Ingenieria en cambio OSI fue propuesto como una aproximacion tecnica.</li>
+                <li class="card-text">Las capas del modelo TCP/IP tienen muchas mas diversas que las del metodo OSI.</li>
+                <li class="card-text">Se debe conocer OSI como modelo generico de red y los protocolos TCP/IP como arquitectura real.</li>
+                <li class="card-text">Los profesionales de networking deben conocer a ambos: OSI como modelo; TCP/IP como arquitectura real.</li>
+                <li class="card-text">TCP/IP integra las capas de Aplicacion, presentacion y sesion del modelo OSI en su capa de Aplicacion.</li>
+            </ul>
+        </div>
+    </div>
+</div>

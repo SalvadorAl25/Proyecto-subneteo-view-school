@@ -1,0 +1,219 @@
+<br>
+<br>
+<h2>Introducción</h2>
+<hr>
+<br>
+<div class="row">
+    <div class="col-7">
+        <div class="card border-primary shadow">
+            <div class="card-body text-secondary">
+                <p class="lead">
+                    La comunicación no es más que un intercambio de información, dicho intercambio puede ser local o remoto. Conceptos
+                </p>
+                <p><strong>Red: </strong><em>Conjunto de dispositivos autónomos, a menudo llamados nodos, con capacidad de interconexión.</em></p>
+                <p><strong>Comunicacion de datos: </strong><em>Movimiento de información codificada de un punto a otro por medio de sistemas de transmisión eléctrica, óptica o radio.</em></p>
+                <p><strong>Canal de comunicacion: </strong><em>Medio usado por los dispositivos para comunicarse.</em></p>
+                <p><strong>Red de Computadores: </strong><em>sistema de interconexión entre computadores que permite compartir recursos e información.</em></p>
+                <p><strong>Protocolo: </strong><em>Conjunto de normas y procedimientos hard/soft que permiten la comunicación entre sistemas, controlando que la información se transmita sin error, y organizando la comunicación.</em></p>
+                <p><strong>Telematica: </strong><em>Conjunto de técnicas y métodos necesarios para la transmisión de datos dentro de un sistema informático o entre puntos situados en lugares remotos, a través de las redes de telecomunicación.</em></p>
+            </div>
+        </div>
+    </div>
+    <div style="width: 25rem;">
+        <img class="card-img-top rounded float-right pt-lg-5" src="../../../assets/img/red.png" alt="Card image cap ">
+    </div>
+</div>
+<hr>
+
+<blockquote class="blockquote text-center">
+    <p class="mb-0">La diferencia entre sistema distribuido y red de computadores </p>
+    <footer class="blockquote-footer">consiste en que en el primer caso la existencia de múltiples computadores autónomos es transparente al usuario.</footer>
+</blockquote>
+
+
+<hr>
+<br>
+<h4>Modelo de sistema de comunicación</h4>
+<div class="row">
+    <div class="mt-4" style="width: 20rem;">
+        <img class="card-img-top rounded float-right" src="../../../assets/img/computadora-y-ordenador-imagen-animada-0040.gif" alt="Card image cap">
+    </div>
+    <div class="col-7 mt-4">
+        <div>
+            <div class="card-body">
+                <p class="lead">
+                    Los elementos de un sistema de comunicación son:
+                </p>
+                <p><strong>Fuente: </strong><em>entidad que genera los datos a transmitir.</em></p>
+                <p><strong>Transmisor: </strong><em>normalmente los datos generados por la fuente no se transmiten directamente como son generados, necesitan ser transformados, normalmente a señales electromagnéticas, para ser enviadas a través de algún sistema de transmisión.</em></p>
+                <p><strong>Sistema de Transmision: </strong><em>Soporte por el que viajan los datos, desde la fuente hasta el destino.</em></p>
+                <p><strong>Receptor: </strong><em>Acepta la señal procedente del sistema detransmisión y la convierte de forma que sea entendida por el dispositivo destino</em></p>
+                <p><strong>Destino: </strong><em>Toma los datos del receptor.</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+<br>
+<h4>Ventajas del uso de las redes</h4>
+<div class="row">
+    <div>
+        <div class="border-primary">
+            <div class="card-body">
+                <p><strong>Compartición de recursos: </strong><em>El objetivo constiste en que todos los recursos estén disponibles para todos los usuarios de larede, con indepencencia de su localización geográfica. El uso de redes de computadores permite el uso compartido de todos los recursos (impresoras, lectores de CD's, scanners, etc...) interconectados, lo que produce una mayor productividad y optimización de recursos en las organizaciones, llevando consigo una reducción de costes y, por tanto, una mayor competitividad. </em></p>
+                <p><strong>Tolerancia a fallos: </strong><em>El uso de redes de computadores aumenta la fiabilidad y tolerancia de los sistemas informáticos, proporcionando múltiples arternativas ante un fallo ocasional de algún elemento constitutivo de la red. Las redes de computadres ofrecen la posiblilidad de aplicar mecanismo de reduncdancia de datos y diplicidad de información, por ejemplo, se puede fonfigurar un sistema informático de fomra que matnenga múltiples copias en tiempo real de una mismo fichero en diferentes computadores, separados geográficamente.</em></p>
+                <p><strong>Ahorro económico: </strong><em>Con el avance de la microinformática, el abaratamiento de semiconductores y material electrónico en general, se ha producido un desarrollo espectacular en redes de computadores integradas por equipos de tampaño medio/pequeño, del tipo PC, debido a su mejor relación potencia/precio. Por ejmplo, los computadores pequeños tienen una relación costo/rendimiento mejor que los grandes supercomputadores. Estas máquinas ofrecen una potencia de cálculo de 10 a 100 veces superior, mientras que el precio es unas 1000 veces mayor.</em></p>
+                <p><strong>Escalabilidad: </strong><em>El uso de redes de computadores permite absorber aumentos de cargas de trabajo, ya que permite un fácil y gradual incremento del sistema, solamente incorporando hardware o software, según necesidad.</em></p>
+                <p><strong>Social: </strong><em>El uso de redes es un potente medio de comunicación, permitiendo la colaboración y trabajo en equipo de personas localizadas geográficamente a grandes distancias.</em></p>
+                <p><strong>Acceso geográfico ilimitado: </strong><em>Los desarrollos en tecnologías inalámbricas y satelitales han permitodo que las redes de computadores alcancen prácticamente todo el planeta.</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+<br>
+<h4>¿Más Introducción?</h4>
+<ngb-tabset [justify]="currentJustify">
+    <ngb-tab title="Protocolos">
+        <ng-template ngbTabContent>
+            <br>
+            <div class="row center">
+                <div class="col-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Protocolos</h5>
+                        <hr>
+                        <p class="card-text"><em>
+                                En base a reducir el diseño, la mayoría de las redes están organizadas en capas o niveles jerárquicos, es decir, cada una construida sobre la inferior. El propósito de cada cama es ofrecer ciertos servicios a las capas superiores, descargando a éstas
+                                del trabajo de implementar al detalle dichos servicios. Como ejemplo de todo esto se estudiará el simulador de redes CNET en el que se definen capas y operaciones propias de éstas. Para comprender el diseño de una red por capas es
+                                muy útil el símil filósofo-traductor-secretaria.
+                            </em>
+                        </p>
+                    </div>
+                </div>
+                <div style="width: 19rem;">
+                    <img class="card-img-top rounded float-right pl-lg-5 pt-4" src="../../../assets/img/ic2623001.png" alt="Card image cap ">
+                </div>
+            </div>
+            <br>
+        </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Interfaces y servicios">
+        <ng-template ngbTabContent>
+            <br>
+            <div class="row center">
+                <div>
+                    <div class="card-body">
+                        <h5 class="card-title">Interfaces y servicios</h5>
+                        <hr>
+                        <p><em>Cada elemento activo de cada capa se denomina entidad. Las entidades de la misma capa en cada máquina se denominan entidades pares. El concepto entidad puede referirse tanto a una entidad tipo software como una entidad tipo hardware.</em></p>
+                        <br>
+                        <p><em>Las entidades de la capa n implementan servicios que usa la capa n+1, en este caso, la capa n se denomina proveedor de servicio, y la capa n+1 se denomina usuario de servicio.</em></p>
+                        <br>
+                        <p><em>Los servicios que una determinada capa ofrece a su capa inmediatamente superior están disponibles en lo SAP. Los SAP de la capa n son los lugares en los que la campa n+1 puede tener acceso a los servicios ofrecidos. Cada SAP tiene una dirección que lo identifica de manera única.</em>
+                        </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Tipos de Servicio Primitivas">
+        <ng-template ngbTabContent>
+            <div class="text-center">
+                <p class="lead">Un servicio se especifica formalmente con un conjunto de primitivas para que un usuario u otra entidad acceda al servicio. Estas primitivas ordenan al servicio que ejecute alguna acción o que informe de una acción que haya tomado una entiedad.</p>
+                <br>
+                <p>Para clasificar las primitivas podemos dividirlas en clases:</p>
+                <br>
+                <p><mark>Request: </mark>Una entidad quiere que el servicio le haga un trabajo</p>
+                <br>
+                <p><mark>Indication: </mark>Se le informa a una entidad a cerca de un suceso</p>
+                <br>
+                <p><mark>Response: </mark>Una entidad quiere responder a un suceso</p>
+                <br>
+                <p><mark>Confirm: </mark>Ha llegado la respuesta a una petición anterior</p>
+            </div>
+        </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Conmutación de Paquetes">
+        <ng-template ngbTabContent>
+            <br>
+            <div class="row center">
+                <div class="col-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Conmutación de Paquetes</h5>
+                        <hr>
+                        <p class="card-text"><em>
+                                    "Se define la conmutación de paquetes ("Paquet switching") como un procedimiento de transferencia de datos divididos en paquetes porvisotos de direcciones, en el que sistema de transmisión se ocupa solamente durante el tiempo de transmisión de un paquiete, quedando a continuación la vía disponible para la transmisión de otros paquetes". En commutación de paquites no es necesario hacer una reserva a priori de los recursos del camino (sistema de transmisión) a la hora de establecer la comunicación.
+                                </em>
+                        </p>
+                    </div>
+                </div>
+                <div style="width: 22rem;">
+                    <img class="card-img-top rounded float-right pl-lg-5 pt-4" src="../../../assets/img/comnutacion 1.gif" alt="Card image cap ">
+                </div>
+            </div>
+            <br>
+        </ng-template>
+    </ngb-tab>
+</ngb-tabset>
+<br>
+<hr>
+<br>
+
+<div class="card-deck">
+    <div class="card text-center">
+        <img src="../../../assets/img/redes_computadoras.png" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Unidad I</h5>
+            <p class="card-text">Aspectos básicos de redes</p>
+            <a aria-disabled="true" [routerLink]="['/Unidad_1']" class="btn btn-primary">ir a...</a>
+        </div>
+    </div>
+    <div class="card text-center">
+        <img src="../../../assets/img/Normas-ISO.jpg" class="card-img-top pl-5" alt="Card image cap" style="width: 20rem">
+        <div class="card-body">
+            <h5 class="card-title">Unidad II</h5>
+            <p class="card-text">Normas y estándares</p>
+            <a [routerLink]="['/Unidad_2']" class="btn btn-primary">ir a...</a>
+        </div>
+    </div>
+    <div class="card text-center">
+        <img src="../../../assets/img/sdafjid.png" class="card-img-top" alt="Card image cap" style="width: 20rem">
+        <div class="card-body">
+            <h5 class="card-title">Unidad III</h5>
+            <p class="card-text">Dispositivos de red</p>
+            <a [routerLink]="['/Unidad_3']" class="btn btn-primary">ir a...</a>
+        </div>
+    </div>
+</div>
+
+<div class="card-deck pt-5 text-center">
+    <div class="card">
+        <img src="../../../assets/img/cableado-estructurado-unitel.jpg" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Unidad IV</h5>
+            <p class="card-text">Cableado estructurado</p>
+            <a [routerLink]="['/Unidad_4']" class="btn btn-primary">ir a...</a>
+        </div>
+    </div>
+    <div class="card text-center">
+        <img src="../../../assets/img/105454653.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Unidad V</h5>
+            <p class="card-text">Planificación y diseño</p>
+            <a [routerLink]="['/Unidad_5']" class="btn btn-primary">ir a...</a>
+        </div>
+    </div>
+    <div class="card text-center">
+        <img src="../../../assets/img/66666666.png" class="card-img-top" alt="...">
+        <img src="../../../assets/img/image004.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Subneteo</h5>
+            <p class="card-text">Calculadora de Sub-Redes</p>
+            <a [routerLink]="['/Subnet']" class="btn btn-primary">ir a...</a>
+        </div>
+    </div>
+</div>
